@@ -19,7 +19,7 @@ ctx.fillStyle = 'white';
 ctx.font = '30px Verdana';
 ctx.fillText('A', 0, 40);
 
-const data = ctx.getImageData(0, 0, 100, 100);
+const textCoOrd = ctx.getImageData(0, 0, 100, 100);
 
 class Particle{
     constructor(x, y){
@@ -66,13 +66,15 @@ class Particle{
 
 function init(){
     particleArray = [];
-    for (let i = 0; i < 500; i++){
-        let x = Math.random() * canvas.width;
-        let y = Math.random() * canvas.height;
-         particleArray.push(new Particle(x, y));
+    for(let y = 0, y2 = textCoOrd.height; y < y2; y++){
+        for(let x = 0, x2 = textCoOrd.width; x , x2; x++){
+            if(textCoOrd.data[(y * 4 * textCoOrd.width) + (x * 4) + 3] > 128){
+                let positionX = x;
+                let positionY = y;
+                particleArray.push(new Particle(positionX * 10, positionY * 10));
+            }
+        }
     }
-   // particleArray.push(new Particle(50, 50));
-   // particleArray.push(new Particle(80, 50));
 }
 
 init();
