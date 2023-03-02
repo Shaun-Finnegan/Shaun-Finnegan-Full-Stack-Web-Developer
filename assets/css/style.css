@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    box-sizing:border-box;
+}
+
+.container{
+    background-color: #111;
+    overflow: hidden;
+}
+.salute{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.salute-text-container{
+    flex: 3;
+}
+
+.salute-text{
+    color: #333;
+    font-size: 35vw;
+    cursor: default;
+}
+
+.salute-image-container{
+    flex: 1;
+    background-size: cover;
+}
+
+
+.name{
+    font-size: 20vw;
+    color: #333;
+    cursor: default;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.salute-image{
+    width: 95%;
+    margin-right: 5px;
+}
+
+.name-container{
+    height: 100vh;
+    background-color: #009698;
+}
+
+.job-title-container-1{
+    height: 100vh;
+    background-color: purple;
+}
+
+.job-title-1{
+    text-align:center;
+    line-height: 50vh;
+    font-size: 10vw;
+    color: #333;
+}
+
+
+.job-title-2{
+    line-height: 50vh;
+    font-size: 5vw;
+    color: #333;
+    text-align: center;
+}
+
+.projects{
+   display: flex;
+   flex-direction: column;
+   gap: 30vh;
+   padding: 0px 100px;
+}
+
+.projects-title{
+    font-size: 10vw;
+    color: #333;
+}
+
+.project-1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.project-1-image{
+    flex: 1;
+}
+
+.image-1{
+    height: 400px;
+    width: 600px;
+}
+
+.project-1-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.project-1-description{
+    font-size: 15px;
+}
